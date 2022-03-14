@@ -1,0 +1,14 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'post/styles.css' %}">
+
+{% if post_list %}
+    <ul>
+    {% for post in post_list %}
+        <li><a href="{% url 'detail' post.id %}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+<script src="{% static 'post/script.js' %}"></script>
