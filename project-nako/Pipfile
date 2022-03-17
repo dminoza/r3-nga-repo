@@ -9,6 +9,7 @@ verify_ssl = true
 django = "*"
 pymysql = "*"
 djangorestframework = "*"
+django-allauth = "*"
 
 [requires]
 python_version = "3.8"
